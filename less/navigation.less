@@ -1,1 +1,27 @@
 // Navigation Styles here
+
+.navigation-section {
+
+  .displayflex(row, space-between, center);
+
+  padding: 10px 0px 10px 0px;
+  a {
+    color: @font-color;
+  }
+
+  @media (max-width: 700px) {
+    display: flex;
+    flex-flow: column  wrap;
+    justify-content: center;
+    align-items: center;
+   }
+
+} // navigation 
+
+.break {
+  margin: 0px ;
+  border-bottom: 2px dashed @navigation-border;
+  width: 100%;
+
+} // break
+
