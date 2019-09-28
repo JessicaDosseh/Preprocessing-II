@@ -1,1 +1,21 @@
 // Mixins in here
+
+.displayflex (@direction, @justify, @align) {
+  display: flex; 
+  flex-wrap: wrap; 
+  flex-direction: @direction; 
+  justify-content: @justify; 
+  align-content: @align;
+}
+
+.button (@color, @bg-color, @pix, @radius){ 
+  text-align: center;
+  color: @color;
+  background-color: @bg-color;
+  padding: @pix;
+  border-radius: @radius;
+}
+
+.hover {
+  lighten(hsl(90, 80%, 50%), 20%);
+}
